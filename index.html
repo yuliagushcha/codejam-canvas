@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Canvas</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <img src="./assets/images/nav icon.png" alt="icon">
+                <p class="header--text">CodeJam - Palette</p>
+                <img src="./assets/images/menu icon.png" alt="icon">
+            </header>
+            <main class="main">
+                <div class="leftPanel">
+                    <div class="instruments">
+                        <div class="instruments--items">
+                            <img src="./assets/images/icon-share.png" alt="icon">
+                            <p class="instruments--text">Paint bucket</p>
+                        </div>
+                        <div class="instruments--items underlined">
+                            <img src="./assets/images/icon-upload.png" alt="icon">
+                            <p class="instruments--text">Choose color</p>
+                        </div>
+                        <div class="instruments--items">
+                            <img src="./assets/images/icon-copy.png" alt="icon">
+                            <p class="instruments--text">Move</p>
+                        </div>
+                        <div class="instruments--items">
+                            <img src="./assets/images/icon-share2.png" alt="icon">
+                            <p class="instruments--text">Transform</p>
+                        </div>
+                    </div>
+                    <div class="colors">
+                        <div class="instruments--items">
+                            <div class="colors--iconColor gray"></div> 
+                            <p class="instruments--text">Current color</p>
+                        </div>
+                        <div class="instruments--items underlined">
+                            <div class="colors--iconColor green"></div> 
+                            <p class="instruments--text">Prev color</p>
+                        </div>
+                        <div class="instruments--items">
+                            <div class="colors--iconColor red"></div> 
+                            <p class="instruments--text">red</p>
+                        </div>
+                        <div class="instruments--items">
+                            <div class="colors--iconColor blue"></div> 
+                            <p class="instruments--text">blue</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <canvas id="canvas" width="512" height="512"></canvas>
+                </div>
+                <div class="rightPanel">
+                    <div class="size">
+                        <div class="instruments--items firstImage">
+                            <div class="size--checkBlock"></div> 
+                            <p class="instruments--text">4x4</p>
+                        </div>
+                        <div class="instruments--items secondImage">
+                            <div class="size--checkBlock"></div> 
+                            <p class="instruments--text">32x32</p>
+                        </div>
+                        <div class="instruments--items thirdImage">
+                            <div class="size--checkBlock"></div> 
+                            <p class="instruments--text">256x256</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
